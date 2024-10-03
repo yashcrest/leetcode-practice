@@ -14,6 +14,8 @@ Input: nums = [1,1,1,3,3,4,3,2,4,2]
 Output: true
 */
 
+// try to solve this with C or C++
+
 function containsDuplicate(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; arr.length; j++) {

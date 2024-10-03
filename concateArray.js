@@ -18,18 +18,18 @@ Explanation: The array ans is formed as follows:
 - ans = [1,2,1,1,2,1]
 */
 
-function getConcatenation (nums){
-    let newArray = []
-    for(let i=0; i < nums.length; i++){
-        newArray[i] = nums[i]
-        newArray[i + nums.length] = nums[i] // this is the tricky part
-    }
-    return newArray
+function getConcatenation(nums) {
+  let newArray = [];
+  for (let i = 0; i < nums.length; i++) {
+    newArray[i] = nums[i];
+    newArray[i + nums.length] = nums[i]; // this is the tricky part
+  }
+  return newArray;
 }
-console.log(getConcatenation([1,2,3]));
+console.log(getConcatenation([1, 2, 3]));
 
 //alt solution using spread operator
-function concateArray(arr){
-    return [...arr, ...arr]
+function concateArray(arr) {
+  return [...arr, ...arr];
 }
-console.log(concateArray([2,3,4]))
+console.log(concateArray([2, 3, 4]));

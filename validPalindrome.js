@@ -35,4 +35,4 @@ function validPalindrome(s) {
   return true;
 }
 
-console.log(validPalindrome("A man, a plan, a canal: Panama"));
+console.log(validPalindrome("tab a cat"));
